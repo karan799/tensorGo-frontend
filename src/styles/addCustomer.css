@@ -1,0 +1,159 @@
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  color: white;
+  padding: 10px 20px;
+  margin: 10px 0;
+  border-radius: 5px 5px 0 0;
+  width: 100%;
+  text-align: left;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.view-all-button,
+.add-customer-button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-left: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.customer-form {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  width: 30%;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input {
+  padding: 10px;
+  border: 0;
+  border-radius: 5px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.35); 
+}
+
+.form-group input.error {
+  border-color: red;
+}
+
+.error-message {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.submit-row {
+  display: flex;
+  justify-content: center;
+}
+
+.submit-button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .actions {
+    justify-content: center;
+  }
+
+  .form-group {
+    width: 45%; 
+}
+}
+
+@media (max-width: 992px) {
+  .form-group {
+    width: 48%; 
+  }
+  
+  .view-all-button,
+  .add-customer-button {
+    width: 100%;
+    margin-bottom: 10px;
+    margin-left: 0; 
+  }
+}
+
+@media (max-width: 768px) {
+  .form-container {
+    padding: 0 10px; 
+  }
+
+  .header {
+    font-size: 1.2em; 
+    text-align: center;
+  }
+
+  .form-group {
+    width: 100%; 
+  }
+
+  .view-all-button,
+  .add-customer-button {
+    padding: 8px 15px;
+    font-size: 0.9em; 
+  }
+}
+
+@media (max-width: 576px) {
+  .form-container {
+    padding: 0 5px; 
+  }
+
+  .header {
+    font-size: 1em; 
+  }
+
+  .customer-form {
+    padding: 15px;
+  }
+
+  .form-group {
+    width: 100%; 
+  }
+
+  .view-all-button,
+  .add-customer-button {
+    padding: 6px 10px; 
+    font-size: 0.8em; 
+  }
+}

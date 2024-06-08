@@ -1,0 +1,36 @@
+/* UserActionLogs.css */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  th,
+  td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #15cf24;
+    font-weight: bold;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #b5b5b5;
+  }
+  
+  tr:hover {
+    background-color: #f1f1f1;
+  }
+  

@@ -1,0 +1,134 @@
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 15px;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.view-all-button,
+.add-customer-button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-left: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.header {
+  color: white;
+  padding: 10px 20px;
+  margin: 10px 0px;
+  border-radius: 5px 5px 0 0;
+  width: 100%;
+  text-align: left;
+}
+
+.customer-details-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.form-row {
+  display: flex; 
+  justify-content: space-between;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  margin-bottom: 10px;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group span {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #f5f5f5;
+}
+
+@media (max-width: 1200px) {
+  .actions {
+    justify-content: center;
+  }
+
+  .form-group {
+    width: 48%; /* Adjust width for better spacing */
+  }
+}
+
+@media (max-width: 992px) {
+  .form-group {
+    width: 100%; /* Full width for each form group */
+  }
+  
+  .view-all-button,
+  .add-customer-button {
+    width: 100%;
+    margin-bottom: 10px;
+    margin-left: 0; /* Reset margin-left */
+  }
+}
+
+@media (max-width: 768px) {
+  .form-container {
+    padding: 0 10px; /* Reduce padding */
+  }
+
+  .header {
+    font-size: 1.2em; /* Adjust font size */
+    text-align: center;
+  }
+
+  .form-group {
+    width: 100%; /* Full width for each form group */
+  }
+
+  .view-all-button,
+  .add-customer-button {
+    padding: 8px 15px; /* Adjust padding */
+    font-size: 0.9em; /* Adjust font size */
+  }
+}
+
+@media (max-width: 576px) {
+  .form-container {
+    padding: 0 5px; /* Further reduce padding */
+  }
+
+  .header {
+    font-size: 1em; /* Further adjust font size */
+  }
+
+  .customer-details-card {
+    padding: 15px; /* Reduce padding */
+  }
+
+  .form-group {
+    width: 100%; /* Full width for each form group */
+  }
+
+  .view-all-button,
+  .add-customer-button {
+    padding: 6px 10px; /* Further adjust padding */
+    font-size: 0.8em; /* Further adjust font size */
+  }
+}
